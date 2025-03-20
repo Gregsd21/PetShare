@@ -1,2 +1,2 @@
 # PetShare
-A program for Pet Owners to Share their pets with those looking to have them short-term.
+A program for pet owners to share their pets with those looking to have them short-term.
