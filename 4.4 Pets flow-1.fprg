@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="grearn6019"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-09-20 12:50:51 PM"/>
+        <attribute name="created" value="Z3JlYXJuNjAxOTtNVlMxNUNWRDg1OzIwMjItMDktMjA7MTI6MjE6MjYgUE07MjgwMA=="/>
+        <attribute name="edited" value="Z3JlYXJuNjAxOTtNVlMxNUNWRDg1OzIwMjItMDktMjA7MTI6NTA6NTEgUE07OTsyOTE2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="name, pet, breed" type="String" array="False" size=""/>
+            <declare name="weight, sentinelValue" type="Integer" array="False" size=""/>
+            <assign variable="sentinelValue" expression="0"/>
+            <while expression="sentinelValue != 1">
+                <output expression="&quot;What is your name? &quot;" newline="True"/>
+                <input variable="name"/>
+                <output expression="&quot;What is the pet's name? &quot;" newline="True"/>
+                <input variable="pet"/>
+                <output expression="&quot;What is the breed of your pet? &quot;" newline="True"/>
+                <input variable="breed"/>
+                <output expression="&quot;How much does the dog weigh? &quot;" newline="True"/>
+                <input variable="weight"/>
+                <if expression="weight &lt; 20">
+                    <then>
+                        <output expression="&quot;The dog's name is: &quot; &amp;pet" newline="True"/>
+                    </then>
+                    <else>
+                        <if expression="weight &gt; 100">
+                            <then>
+                                <output expression="&quot;The dog's name is: &quot; &amp;pet" newline="True"/>
+                            </then>
+                            <else>
+                                <output expression="&quot;Your dog is between 20-100 pounds, so your dog is not cool &quot;&amp;name" newline="True"/>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+                <output expression="&quot;Enter any number other than 1 to try again. Enter 1 to quit program.&quot;" newline="True"/>
+                <input variable="sentinelValue"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
